@@ -1,0 +1,47 @@
+/* Declaration of variables CSS */
+:root {
+    --colorUno: #FFFFFF;
+    --colorDos: #00A8A8;
+    --colorTres: #161E21;
+    --fuentePrincipal: "Roboto", sans-serif;
+}
+
+/* General styles for the document HTML  */
+html {
+    background-color: var(--colorUno);
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+}
+
+
+/* Styles for containers */
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* General styles for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* General styles for btn */
+.button{
+    display: block;
+    background-color: var(--colorDos);
+    padding: .8rem;
+    color: white;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;  
+}
+
+.button:hover{
+    background-color: var(--colorTres);
+}
+
+/* Code CSS for your project */
