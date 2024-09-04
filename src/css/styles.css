@@ -87,3 +87,106 @@ ul li a:hover{
     text-decoration: underline;
     color: var(--colorDos);
 }
+
+
+
+/*: Styles for Main */
+
+main{
+    background-color: var(--colorTres);
+}
+
+.hero__text{
+    text-align: center;
+    font-size: 18px;
+    color: var(--colorUno);
+    padding: 1rem 0;
+}
+
+.hero__title--primary{
+    color: var(--colorDos);
+    text-transform: uppercase;
+}
+
+
+.hero__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero__button--primary,
+.hero__button--secondary {
+    text-decoration: none;
+    border: 2px solid var(--colorDos);
+}
+
+
+@media (width >= 768px) {
+    .hero {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 35rem;
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+    .hero__text{
+        margin: 0;
+    }
+    .hero__title{
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+}
+
+
+/*: Styles for Section Apps */
+.mobile{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mobile__description{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.mobile__buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.mobile__buttons:hover{
+    cursor: pointer;
+}
+
+@media (width >= 768px) {
+    .app {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .mobile__title{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    
+    .mobile__description{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .mobile{
+        order: 2;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 45rem;
+        margin: 0;
+    }
+}
