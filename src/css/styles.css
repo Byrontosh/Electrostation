@@ -190,3 +190,25 @@ main{
         margin: 0;
     }
 }
+
+/*: Styles for Section Footer */
+.footer{
+    background-color: var(--colorTres);
+    color: var(--colorUno);
+    text-align: center;
+    padding:  1rem;
+}
+
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (width >= 768px) {
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
