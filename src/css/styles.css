@@ -45,3 +45,45 @@ img {
 }
 
 /* Code CSS for your project */
+
+/*: Styles for Section Navbar */
+
+.navbar__container {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+@media (width >= 768px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navbar__logo{
+    color: var(--colorTres);
+    cursor: pointer;
+    margin: 0;
+}
+.navbar__logo--primary{
+    color: var(--colorDos);
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+ul li a{
+    color: var(--colorTres);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: var(--colorDos);
+}
